@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Django TO-DO app  mini-project
+# Django TODO app  mini-project
 
 <details>
 <summary>Installing and creating a Django project</summary>
@@ -11,7 +11,7 @@
 
 - To create new project
 
-        django-admin startproject django_todo .
+        django-admin startproject PROJ_NAME . (ie: django_todo .)
 
 - Create an env.py file and include it into a .gitignore file
 
@@ -30,6 +30,33 @@
 
         SECRET_KEY = os.environ.get("SECRET_KEY")
 
+</details>
+
+<details>
+<summary>Create an App </summary>
+
+- This command creates a directory called "todo" with the app files
+
+        python3 manage.py startapp APP_NAME (ie: todo)
+
+</details>
+
+<details>
+<summary>Create templates to render the html files</summary>
+
+- Create a templates directory in the todo directory
+
+        mkdir todo/templates
+
+- Create a todo directory in the templates directory
+
+        mkdir todo/templates/todo
+
+- Create a todo_list.html file within the todo directory inside templates folder.
+
+        touch todo/templates/todo/todo_list.html
+
+</details>
 
 ---
 
